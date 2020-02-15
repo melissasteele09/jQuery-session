@@ -1,4 +1,3 @@
-const $ = require('jquery');
 let btn = document.querySelector('button');
 btn.addEventListener('click', function(e){
   e.preventDefault();
@@ -12,3 +11,8 @@ clearBtn.addEventListener('click', function(){
 })
 
 console.log($('p').text())
+
+$(document).ready(function() {
+  // console.log("Hello");
+  $("button[type='submit']").text("Add New Buddy");
+})
